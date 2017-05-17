@@ -1,4 +1,6 @@
-"# IMIndependentModeDemo" 
+## IMIndependentModeDemo
+## 通过独立方式使用腾讯云的云通信服务获取签名demo
+
 >accountOP (账号相关操作)<br/>
 db (mysql 数据库操作和 redis 操作)<br/>
 entity (账号信息实体类)<br/>
@@ -15,9 +17,9 @@ views(视图)<br/>
 > - 无法运行或运行失败说明.txt (一些声明)
 
 > **需要修改的文件:
-> - ./db/mysqlOP.js
-> - ./db/redisPoolPackage.js
-> - ./sigGet/sig.js
+> - ./db/mysqlOP.js (修改数据库 ip 和 密码)
+> - ./db/redisPoolPackage.js (修改 redis ip 和 密码)
+> - ./sigGet/sig.js (修改 SDKAPPID)
 > - ./sigGet/private_key (下载)
 > - ./sigGet/public_key (下载)
 > - ./entity/userInfoEntity.js (根据需求进行修改)
