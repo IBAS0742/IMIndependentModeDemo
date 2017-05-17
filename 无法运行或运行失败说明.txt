@@ -1,0 +1,2 @@
+sqlpool github 位置 https://github.com/IBAS0742/sqlpool/tree/master/node_modules/sqlpool
+node_modules 中的 sqlpool 为本人在 linux 下编写，在完成该项目是不是在同等条件下，无法完成代码的 mpn 提交，这个项目中 我 对该库进行了一定的修改，如果运行发生该库的报错信息，请重 github 中重新下载该库进行替换。

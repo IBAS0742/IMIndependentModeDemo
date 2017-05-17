@@ -1,0 +1,27 @@
+
+aEntity = {
+    //这里的 type 参考对象为 utils/regEx.js 中定义的正则识别规则，其中不需要进行失败的字段请标识为 unCheck
+    fields : {
+        "fieldName" : "type",
+    },
+    //特殊的私有方法请放置到 _ext_ 中
+    _ext_ : {
+        method1 : function() {}
+    }
+}
+
+userInfoEntity = {
+    fields : {
+        userName : "userName",
+        password : "password",
+        like : "unCheck",
+    }
+    _ext_ : {
+        makeOneRandUserColor : function() {
+            return "rgba(" + parseInt(Math.random() * 256) + ","
+                           + parseInt(Math.random() * 256) + ","
+                           + parseInt(Math.random() * 256) + ","
+                           + Math.random() + ")";
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "usgSign",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.13.3",
+    "hbs": "^4.0.1",
+    "pool-redis": "^0.1.2",
+    "sqlpool": "^1.0.2"
+  },
+  "devDependencies": {},
+  "author": "ibas",
+  "license": "ISC"
+}
