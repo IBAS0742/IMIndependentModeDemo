@@ -5,7 +5,7 @@
 var login = (function (userInfoCheck,sig,userInfoEntity,redisOPMethod,sqlOP) {
     return {
         login : function (userInfo,cb) {
-            if (userInfoCheck.userInfoCheck(userInfo)) {
+            if ((userInfo = userInfoCheck.userInfoCheck(userInfo))) {
                 //return sig.genSig(userInfo[userInfoEntity._ext_.sigField()]);
             } else {
                 cb({error : "1"});
@@ -24,8 +24,8 @@ var login = (function (userInfoCheck,sig,userInfoEntity,redisOPMethod,sqlOP) {
                 } else {
                     //获取不到信息，从数据库中进行查询
                     sqlOP.select({
-                        "useName" : userInfo.userName,
-                        "password" : userInfo.password
+                        conditionStr : "userName='"+ userInfo.userName + "' and " +
+                                         "password='" + userInfo.password + "'"
                     },function (err,ret) {
                         if (err) {
                             cb({error : "1"});
